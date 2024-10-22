@@ -1,9 +1,9 @@
 name: check
 on:
   check_run:
-  - completed
+    types: [completed]
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-    - run: echo " hai from check_run"
+      - run: echo "hai from check_run"
