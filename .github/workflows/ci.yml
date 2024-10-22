@@ -1,0 +1,9 @@
+name: check
+on:
+  check_run:
+  - completed
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo " hai from check_run"
